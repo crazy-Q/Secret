@@ -1,7 +1,9 @@
-package com.jikexueyuan.secret;
+package secret;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.jikexueyuan.secret.R;
 
 public class MainActivity extends AppCompatActivity {
 
