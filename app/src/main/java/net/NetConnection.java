@@ -36,6 +36,7 @@ public class NetConnection {
                             uc.setDoOutput(true);
                             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(uc.getOutputStream(), Config.CHARSET));
                             bw.write(paramsStr.toString());
+                            bw.flush();//发送到服务器
                             break;
                         default:
                             uc = new URL(url + "?" + paramsStr.toString()).openConnection();
@@ -74,7 +75,7 @@ public class NetConnection {
                 }
                 super.onPostExecute(result);
             }
-        };
+        }.execute();
 
     }
 
