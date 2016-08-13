@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(this, AtyTimeLine.class);
             i.putExtra(Config.KEY_TOKEN, token);
             startActivity(i);
-        }else
+        } else {
             startActivity(new Intent(this, AtyLogin.class));
+        }
+        finish();
     }
 }
