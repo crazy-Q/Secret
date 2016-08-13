@@ -10,6 +10,7 @@ public class Config {
 
     public static final String KEY_TOKEN = "token";
     public static final String APP_ID = "com.jikexueyuan.secret";
+    public static final String CHARSET = "utf-8";
 
     /**
      * 获取缓存的Token
